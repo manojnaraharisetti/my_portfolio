@@ -260,7 +260,7 @@ export default function Index() {
           >
             <div className="main-title">
               <h2>
-                My <span>Portfolio</span>
+                My <span>Projects</span>
                 <span className="bg-text">My Work</span>
               </h2>
             </div>
@@ -454,10 +454,7 @@ export default function Index() {
               <div className="contact-content-con">
                 <div className="left-contact">
                   <h4>Contact me here</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                    laborum numquam? Quam excepturi perspiciatis quas quasi.
-                  </p>
+                 <br></br>
                   <div className="contact-info">
                     <div className="contact-item">
                       <div className="icon">
@@ -594,7 +591,7 @@ export default function Index() {
             data-id="blogs"
             onClick={() => setActiveSection("blogs")}
           >
-            <i className="far fa-newspaper"></i>
+            <i className="fa fa-certificate"></i>
           </div>
           <div
             className={`control ${
