@@ -415,7 +415,7 @@ export default function Index() {
               </div>
               <div className="blogs">
                 <div className="blog">
-                  <img src={AWS} alt="" />
+                  <a href="https://www.credly.com/badges/ab9806ad-ad87-44b4-b70c-d30c1e09fc90/public_url"><img src={AWS} alt="" />
                   <div className="blog-text">
                     <h4>AWS Cloud Practioner</h4>
                     <p>
@@ -424,6 +424,7 @@ export default function Index() {
                       Cloud
                     </p>
                   </div>
+                  </a>
                 </div>
                 <div className="blog">
                   <img src={redhat} alt="" />
