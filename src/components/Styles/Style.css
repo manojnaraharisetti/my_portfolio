@@ -868,7 +868,7 @@ section {
   }
 
   .header-content .right-header {
-    padding-left: 9rem;
+    padding-left: 0rem;
   }
 }
 @media screen and (max-width: 660px) {
