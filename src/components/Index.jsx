@@ -454,7 +454,7 @@ export default function Index() {
               <div className="contact-content-con">
                 <div className="left-contact">
                   <h4>Contact me here</h4>
-                 <br></br>
+                  <br></br>
                   <div className="contact-info">
                     <div className="contact-item">
                       <div className="icon">
@@ -508,7 +508,7 @@ export default function Index() {
                       <a href="https://twitter.com/NaraharisettiM1">
                         <i className="fab fa-twitter"></i>
                       </a>
-                      <a href="https://github.com/manojnaraharisetti/" >
+                      <a href="https://github.com/manojnaraharisetti/">
                         <i className="fab fa-github"></i>
                       </a>
                       <a href="https://www.instagram.com/_mn.2k4_/">
