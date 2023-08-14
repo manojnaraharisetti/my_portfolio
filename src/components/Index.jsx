@@ -427,14 +427,15 @@ export default function Index() {
                   </a>
                 </div>
                 <div className="blog">
-                  <img src={redhat} alt="" />
+                  <a href="https://www.credly.com/badges/b374d9b4-da1e-4286-896c-202097adc45c/public_url"><img src={redhat} alt="" />
                   <div className="blog-text">
                     <h4>RED HAT</h4>
                     <p>
-                      Red Hat AD183 trains participants in comprehensive use of
-                      Java EE for business-oriented software applications.
+                      Red Hat Certified Enterprise Application Developer is a certification.The certification is
+                       designed for to  test their knowledge and skills as applied to modern enterprise Java development.
                     </p>
                   </div>
+                  </a>
                 </div>
               </div>
             </div>
