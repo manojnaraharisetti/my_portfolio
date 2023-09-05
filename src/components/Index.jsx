@@ -8,6 +8,10 @@ import Mypic from "./Assests/Mylastpic.png";
 import AWS from "./Assests/AWS.jpeg";
 import redhat from "./Assests/Red-Hat.png";
 export default function Index() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
   const [activeSection, setActiveSection] = useState("home");
   const [lightMode, setLightMode] = useState(false);
   useEffect(() => {
@@ -17,6 +21,17 @@ export default function Index() {
       document.body.classList.remove("light-mode");
     }
   }, [lightMode]);
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+    let recipient = "iammanoj1420@gmail.com";
+    let subject = "Email from Portfolio Website";
+    let body = `Name: ${name}\nEmail: ${email}\nSubject: ${number}\nMessage: ${message}`;
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <>
       <body className="main-content">
@@ -415,26 +430,30 @@ export default function Index() {
               </div>
               <div className="blogs">
                 <div className="blog">
-                  <a href="https://www.credly.com/badges/ab9806ad-ad87-44b4-b70c-d30c1e09fc90/public_url"><img src={AWS} alt="" />
-                  <div className="blog-text">
-                    <h4>AWS Cloud Practioner</h4>
-                    <p>
-                      AWS Certified Cloud Practitioner is an entry-level
-                      certification demonstrating overall understanding of AWS
-                      Cloud
-                    </p>
-                  </div>
+                  <a href="https://www.credly.com/badges/ab9806ad-ad87-44b4-b70c-d30c1e09fc90/public_url">
+                    <img src={AWS} alt="" />
+                    <div className="blog-text">
+                      <h4>AWS Cloud Practioner</h4>
+                      <p>
+                        AWS Certified Cloud Practitioner is an entry-level
+                        certification demonstrating overall understanding of AWS
+                        Cloud
+                      </p>
+                    </div>
                   </a>
                 </div>
                 <div className="blog">
-                  <a href="https://www.credly.com/badges/b374d9b4-da1e-4286-896c-202097adc45c/public_url"><img src={redhat} alt="" />
-                  <div className="blog-text">
-                    <h4>RED HAT</h4>
-                    <p>
-                      Red Hat Certified Enterprise Application Developer is a certification.The certification is
-                       designed for to  test their knowledge and skills as applied to modern enterprise Java development.
-                    </p>
-                  </div>
+                  <a href="https://www.credly.com/badges/b374d9b4-da1e-4286-896c-202097adc45c/public_url">
+                    <img src={redhat} alt="" />
+                    <div className="blog-text">
+                      <h4>RED HAT</h4>
+                      <p>
+                        Red Hat Certified Enterprise Application Developer is a
+                        certification.The certification is designed for to test
+                        their knowledge and skills as applied to modern
+                        enterprise Java development.
+                      </p>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -520,13 +539,31 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="right-contact">
-                  <form className="contact-form">
+                  <form className="contact-form" onSubmit={sendEmail}>
                     <div className="input-control i-c-2">
-                      <input type="text" required placeholder="YOUR NAME" />
-                      <input type="email" required placeholder="YOUR EMAIL" />
+                      <input
+                        type="text"
+                        required
+                        placeholder="YOUR NAME"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                      <input
+                        type="email"
+                        required
+                        placeholder="YOUR EMAIL"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
                     </div>
                     <div className="input-control">
-                      <input type="text" required placeholder="ENTER SUBJECT" />
+                      <input
+                        type="number"
+                        required
+                        placeholder="ENTER NUMBER"
+                        value={number}
+                        onChange={(e) => setNumber(e.target.value)}
+                      />
                     </div>
                     <div className="input-control">
                       <textarea
@@ -535,21 +572,25 @@ export default function Index() {
                         cols="15"
                         rows="8"
                         placeholder="Message Here..."
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
                     </div>
                     <div className="submit-btn">
-                      <a
-                        href={MyResume}
+                      <button
+                        // href={MyResume}
                         className="main-btn"
-                        download="Example-PDF-document"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        // download="Example-PDF-document"
+                        // target="_blank"
+                        // rel="noopener noreferrer"
+                        value="Send Message"
+                        type="submit"
                       >
                         <span className="btn-text">Submit</span>
                         <span className="btn-icon">
                           <i className="fa fa-check"></i>
                         </span>
-                      </a>
+                      </button>
                     </div>
                   </form>
                 </div>
