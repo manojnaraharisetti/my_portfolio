@@ -55,7 +55,7 @@ export default function Index() {
                 <a
                   href={MyResume}
                   className="main-btn"
-                  download="Example-PDF-document"
+                  download="Manoj-Naraharisetti-Resume"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
