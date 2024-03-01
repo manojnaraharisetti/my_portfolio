@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./Styles/Style.css";
 import MyResume from "./../components/Myresume.pdf";
 import Event1 from "./Assests/Event1.jpg";
-import Autobots from "./Assests/Autobots.jpg";
-import Banking from "./Assests/Banking.jpg";
+import automobile from "./Assests/automobile.png"
+import bandandfinance from "./Assests/bankandfinanace.png"
 import Mypic from "./Assests/Mylastpic.png";
 import AWS from "./Assests/AWS.jpeg";
 import redhat from "./Assests/Red-Hat.png";
+import myparkaway from "./Assests/myparkaway.png"
 export default function Index() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -305,7 +306,7 @@ export default function Index() {
               </div>
               <div className="portfolio-item">
                 <div className="image">
-                  <img src={Autobots} alt="" />
+                  <img src={automobile} alt="" />
                 </div>
                 <div className="hover-items">
                   <h3>Project Source</h3>
@@ -324,20 +325,36 @@ export default function Index() {
               </div>
               <div className="portfolio-item">
                 <div className="image">
-                  <img src={Banking} alt="" />
+                  <img src={bandandfinance} alt="" />
                 </div>
                 <div className="hover-items">
                   <h3>Project Source</h3>
                   <div className="icons">
-                    <a href="/" className="icon">
+                    <a href="https://github.com/rajgopalhota/SDP-03.git" className="icon">
                       <i className="fab fa-github"></i>
                     </a>
-                    <a href="/" className="icon">
+                    <a href="https://vajra-bank.vercel.app/" className="icon">
                       <i className="fas fa-link"></i>
                     </a>
                   </div>
                 </div>
               </div>
+              <div className="portfolio-item">
+                    <div className="image">
+                        <img src={myparkaway} alt="" />
+                    </div>
+                    <div className="hover-items">
+                        <h3>Project Source</h3>
+                        <div className="icons">
+                            <a href="https://github.com/manojnaraharisetti/My-React-File-Manager.git" className="icon">
+                                <i className="fab fa-github"></i>
+                            </a>
+                            <a href="https://my-react-file-manager-manoj-naraharisettis-projects.vercel.app/" className="icon">
+                                <i className="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
               {/* <div className="portfolio-item">
                     <div className="image">
                         <img src={port4} alt="" />
