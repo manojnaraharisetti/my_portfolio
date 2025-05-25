@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Styles/Style.css";
-import MyResume from "./../components/MyResume.pdf";
+import MyResume from "./../components/My_Resume.pdf";
 import Event1 from "./Assests/Event1.jpg";
 import automobile from "./Assests/automobile.png"
 import bandandfinance from "./Assests/bankandfinanace.png"
