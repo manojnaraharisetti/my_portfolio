@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Styles/Style.css";
-import MyResume from "./../components/Myresume.pdf";
+import MyResume from "./../components/MyResume.pdf";
 import Event1 from "./Assests/Event1.jpg";
 import automobile from "./Assests/automobile.png"
 import bandandfinance from "./Assests/bankandfinanace.png"
@@ -107,7 +107,7 @@ export default function Index() {
                   <a
                     href={MyResume}
                     className="main-btn"
-                    download="Example-PDF-document"
+                    download="Manoj-Naraharisetti-Resume"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -121,7 +121,7 @@ export default function Index() {
               <div className="right-about">
                 <div className="about-item">
                   <div className="abt-text">
-                    <p className="large-text">3</p>
+                    <p className="large-text">2</p>
                     <p className="small-text">
                       FUll Stack <br /> Projects
                     </p>
@@ -135,14 +135,14 @@ export default function Index() {
                     </p>
                   </div>
                 </div>
-                <div className="about-item">
+                {/* <div className="about-item">
                   <div className="abt-text">
                     <p className="large-text">1</p>
                     <p className="small-text">
                       REDHAT <br /> Certification
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="about-stats">
@@ -285,7 +285,7 @@ export default function Index() {
               Devlopmets.
             </p>
             <div className="portfolios">
-              <div className="portfolio-item">
+              {/* <div className="portfolio-item">
                 <div className="image">
                   <img src={Event1} alt="" />
                 </div>
@@ -303,7 +303,7 @@ export default function Index() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="portfolio-item">
                 <div className="image">
                   <img src={automobile} alt="" />
@@ -323,7 +323,7 @@ export default function Index() {
                   </div>
                 </div>
               </div>
-              <div className="portfolio-item">
+              {/* <div className="portfolio-item">
                 <div className="image">
                   <img src={bandandfinance} alt="" />
                 </div>
@@ -338,7 +338,7 @@ export default function Index() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="portfolio-item">
                     <div className="image">
                         <img src={myparkaway} alt="" />
@@ -459,7 +459,7 @@ export default function Index() {
                     </div>
                   </a>
                 </div>
-                <div className="blog">
+                {/* <div className="blog">
                   <a href="https://www.credly.com/badges/b374d9b4-da1e-4286-896c-202097adc45c/public_url">
                     <img src={redhat} alt="" />
                     <div className="blog-text">
@@ -472,7 +472,7 @@ export default function Index() {
                       </p>
                     </div>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
